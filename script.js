@@ -1,3 +1,6 @@
+!!null === false;
+!![] === true;
+
 var dUsername = [];
 var dNama = [];
 var dEmail = [];
@@ -28,7 +31,7 @@ function add() {
   if (username == "" || nama == "" || email == "" || jurusan == "") {
     infoAddData("tidak");
   } else {
-    if (sUsername == null || dUsername.length == 0) {
+    if (sUsername == "" || dUsername.length == 0 || dUsername == null) {
       dUsername.push(username);
       dNama.push(nama);
       dEmail.push(email);
