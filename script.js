@@ -1,20 +1,10 @@
 !!null === false;
 !![] === true;
 
-var dUsername = [];
-var dNama = [];
-var dEmail = [];
-var dJurusan = [];
-
-localStorage.setItem("username", JSON.stringify(dUsername));
-localStorage.setItem("nama", JSON.stringify(dNama));
-localStorage.setItem("email", JSON.stringify(dEmail));
-localStorage.setItem("jurusan", JSON.stringify(dJurusan));
-
-dUsername = JSON.parse(localStorage.getItem("username"));
-dNama = JSON.parse(localStorage.getItem("nama"));
-dEmail = JSON.parse(localStorage.getItem("email"));
-dJurusan = JSON.parse(localStorage.getItem("jurusan"));
+var dUsername = ["1"];
+var dNama = ["2"];
+var dEmail = ["3"];
+var dJurusan = ["4"];
 
 const tombolAdd = document.querySelector(".add");
 const form = document.getElementById("form");
