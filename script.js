@@ -1,10 +1,10 @@
 !!null === false;
 !![] === true;
 
-var dUsername = [];
-var dNama = [];
-var dEmail = [];
-var dJurusan = [];
+var dUsername = ["1"];
+var dNama = ["2"];
+var dEmail = ["3"];
+var dJurusan = ["4"];
 
 const tombolAdd = document.querySelector(".add");
 const form = document.getElementById("form");
@@ -109,7 +109,6 @@ function deleteData(user) {
   let tombolHapus = document.querySelectorAll(".delete");
   let tombolEdit = document.querySelectorAll(".edit");
   let sure = document.querySelectorAll(".sure");
-  console.log(tombolHapus);
 
   tombolEdit[user].innerHTML = `<button class="mt-2 btn btn-danger ">Yes</button>`;
   tombolHapus[user].innerHTML = `<button class="mt-2 btn btn-secondary " >No</button>`;
