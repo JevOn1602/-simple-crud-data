@@ -1,10 +1,7 @@
-!!null === false;
-!![] === true;
-
-var dUsername = ["1"];
-var dNama = ["2"];
-var dEmail = ["3"];
-var dJurusan = ["4"];
+var dUsername = [];
+var dNama = [];
+var dEmail = [];
+var dJurusan = [];
 
 const tombolAdd = document.querySelector(".add");
 const form = document.getElementById("form");
@@ -31,7 +28,7 @@ function add() {
   if (username == "" || nama == "" || email == "" || jurusan == "") {
     infoAddData("tidak");
   } else {
-    if (sUsername == "" || dUsername.length == 0 || dUsername == null) {
+    if (sUsername == "" || dUsername.length == 0) {
       dUsername.push(username);
       dNama.push(nama);
       dEmail.push(email);
