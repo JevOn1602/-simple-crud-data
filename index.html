@@ -4,21 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DataManage</title>
+    <title>Simple CRUD by JevOn</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="ico/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="ico/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="ico/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="ico/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="ico/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="ico/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="ico/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="ico/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="ico/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="ico/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="ico/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="ico/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="ico/mstile-310x310.png" />
+
   </head>
-  <body>
+  <body onload="Read()">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container justify-content-center">
-        <a class="navbar-brand" href="#">SIMPLE STATIC DATA by Jevon</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <!-- <a class="navbar-brand" href="#">SIMPLE CRUD DATA by</a> -->
+        <span>SIMPLE CRUD DATA by <a class="navbar-brand" href="https://github.com/JevOn1602?tab=repositories" target="_blank">  <i class="fab fa-github"></i> JevOn1602</a>  </span> 
+        </div>
       </div>
     </nav>
 
-    <br id="add" /><br />
+    <section id="home">
+      <div class="judul mt-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h3>HOME</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
 
     <div class="judul mt-3">
       <div class="container">
@@ -30,81 +63,69 @@
       </div>
     </div>
 
+    
+
+    
+
+
     <section class="data-add">
-      <form action="" autocomplete="off" id="form1">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="mb-3 form-username-parent">
-                <label for="username" class="form-label form-username">Username</label>
-                <input type="text" class="form-control username" id="username" placeholder="Username" />
-              </div>
-              <div class="mb-3">
-                <label for="nama" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control nama" id="nama" placeholder="Nama Lengkap" />
-              </div>
-              <div class="mb-3">
-                <label for="umur" class="form-label">Umur</label>
-                <input type="text" class="form-control umur" id="umur" placeholder="Umur" />
-              </div>
-              <div class="mb-3">
-                <label for="jurusan" class="form-label">Jurusan</label>
-                <input type="text" class="form-control jurusan" id="jurusan" placeholder="Jurusan" />
-              </div>
-              <div class="mb-3">
-                <div class="btn btn-primary add">ADD</div>
-              </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="info">
+              <form action="" id="form">
+                </div>
+                <div class="mb-3 form-username-parent">
+                  <label for="username" class="form-label form-username">Username</label>
+                  <input type="text" class="form-control username" id="username" placeholder="Username" />
+                </div>
+                <div class="mb-3">
+                  <label for="nama" class="form-label">Nama Lengkap</label>
+                  <input type="text" class="form-control nama" id="nama" placeholder="Nama Lengkap" />
+                </div>
+                <div class="mb-3">
+                  <label for="umur" class="form-label">Email</label>
+                  <input type="email" class="form-control email" id="email" placeholder="Email" />
+                </div>
+                <div class="mb-3">
+                  <label for="jurusan" class="form-label">Jurusan</label>
+                  <input type="text" class="form-control jurusan" id="jurusan" placeholder="Jurusan" />
+                </div>
+                <div class="mb-3">
+                  <!-- <input type="submit" class="btn btn-primary add"> -->
+                  <input type="submit" class="btn btn-primary add"></input>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-      </form>
     </section>
 
-    <br id="check" /><br />
-
-    <div class="judul mt-3">
+    <div class="judul mt-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <h3>ISI DATA</h3>
+            <h2>Isi Data</h2>
           </div>
         </div>
       </div>
     </div>
 
     <section class="check">
-      <div class="container">
+      <div class="container  ">
         <div class="row">
-          <div class="col-lg-10">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col">Username</th>
-                  <th scope="col">Nama</th>
-                  <th scope="col">Umur</th>
-                  <th scope="col">Jurusan</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody class="tbody">
-                <!-- <tr class="databody">
-                  <td class="usernametd">Mark</td>
-                  <td>Otto</td>
-                  <td>@mdo</td>
-                  <td>@mdo</td>
-                  <td class="button-delete">
-                    <button class="btn btn-danger btn-delete"><i class="fas fa-trash-alt"></i></button>
-                  </td>
-                </tr> -->
-              </tbody>
-            </table>
+          <div class="col-md-12">
+            <div class="cards userTR d-flex flex-row flex-wrap gap-3">
+
+            </div>
           </div>
         </div>
       </div>
+      
     </section>
 
     <script src="https://kit.fontawesome.com/a465889bc2.js" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -10,9 +10,10 @@ Keunggulan :
 - Bisa menambahkan data
 - Data langusung tersisi dibawah form data
 - Data bisa dihapus
+- Data dapat diedit
 - Jika ada username yang sama makan data tidak jadi ditambahkan
+- Data tersimpan di local storage sehingga tidak akan hilang
 
 Kekurangan :
 
-- Data bersifat sementara
-- Saat di refresh smua data akan di reset
+- masih terdapat bug di bagian info
