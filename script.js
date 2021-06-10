@@ -8,6 +8,22 @@ const form = document.getElementById("form");
 const userTR = document.querySelector(".userTR");
 const inputData = document.querySelectorAll(".form-control");
 
+function start() {
+  if (localStorage.length < 4) {
+    myFunc();
+  } else {
+    Read();
+  }
+}
+
+function myFunc() {
+  myFunc = function () {}; // kill it as soon as it was called
+  localStorage.setItem("username", JSON.stringify(dUsername));
+  localStorage.setItem("nama", JSON.stringify(dNama));
+  localStorage.setItem("email", JSON.stringify(dEmail));
+  localStorage.setItem("jurusan", JSON.stringify(dJurusan));
+}
+
 tombolAdd.addEventListener("click", (e) => {
   e.preventDefault;
   add();
