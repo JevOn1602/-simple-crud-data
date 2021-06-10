@@ -1,7 +1,7 @@
-var dUsername = [];
-var dNama = [];
-var dEmail = [];
-var dJurusan = [];
+let dUsername = [];
+let dNama = [];
+let dEmail = [];
+let dJurusan = [];
 
 const tombolAdd = document.querySelector(".add");
 const form = document.getElementById("form");
